@@ -1,1 +1,385 @@
-// Specific CSS for your home-page
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// light blue = #00A8E8
+// orange = #F55D3E
+// dark blue = #003459
+
+
+body{
+  margin: 0px;
+  height: 600px;
+}
+
+.text-blue{
+  color:  #003459;
+}
+
+.nav{
+  position: absolute;
+  z-index: 1000;
+  right: 20px;
+  top: 20px;
+  ul{
+    list-style-type: none;
+    li{
+        display: inline;
+
+    }
+  }
+}
+
+.nav-link{
+  display: inline;
+  font-family: 'Poiret One', cursive;
+  color: white;
+  &:hover{
+    color: #F55D3E;
+  }
+}
+
+
+.banner{
+  position: relative;
+  .banner-heading{
+    position: absolute;
+    bottom: 40px;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.about-banner{
+  height: 400px;
+  background-size: cover;
+}
+
+
+
+.logo-home{
+  height: 200px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.banner-tag-line{
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+.carousel-item{
+  height: 600px;
+  background-size: cover;
+}
+
+h1{
+  font-family: 'Poiret One', cursive;
+  line-height: 90px;
+  text-align: center;
+  color: white;
+}
+
+#mountains{
+  background-image:
+      linear-gradient(
+        rgba(0, 0, 0, 0.41),
+        rgba(0, 0, 0, 0.41)
+      ),
+    url('mountains.jpg');
+}
+
+
+.middle-banner{
+  margin-top: 100px;
+  background-image:
+      linear-gradient(
+        rgba(0, 0, 0, 0.41),
+        rgba(0, 0, 0, 0.41)
+      ),
+    url('mountains.jpg');
+  height: 600px;
+  position: relative;
+  h1{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+p{
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.18em;
+  font-weight: lighter;
+}
+
+.paragraphs{
+  p{
+    letter-spacing: 0;
+  }
+}
+
+.button{
+  width: 400px;
+  height: 60px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  font-family: 'Poiret One', cursive;
+  font-size: 40px;
+  &:hover{
+    color: white;
+  }
+}
+
+.button-blue{
+  background: #00A8E8;
+  &:hover{
+    background: #F55D3E;
+  }
+}
+
+.home-paragraphs{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-card{
+  background-size: cover;
+  position: relative;
+  height: 400px;
+  width: 400px;
+}
+
+.card-inner{
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#handup{
+  background-image: url('handup.jpg');
+}
+
+#jigsaw{
+  background-image: url('jigsaw.jpg');
+}
+
+
+.home-programs{
+  background: #DEE2E1;
+  padding-top: 20px;
+  h1{
+    color: #003459;
+  }
+}
+
+.home-card{
+  background-size: cover;
+}
+
+.card-inner{
+  background: rgba(0, 0, 0, 0.5);
+  margin: 25px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h3{
+    font-family: 'Poiret One', cursive;
+    color: white;
+    font-size: 60px;
+  }
+}
+
+h3{
+  font-family: 'Poiret One', cursive;
+  color: #00A8E8;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 100px;
+  font-style: italic;
+}
+
+// light blue = #00A8E8
+// orange = #F55D3E
+// dark blue = #003459
+
+.home-card
+{
+     overflow: hidden;
+}
+
+.home-card-background
+{
+     height: 100%;
+     width: 100%;
+     background-size: cover;
+     background-position: center;
+     transition: all 0.5s ease;
+}
+
+.home-card-background:hover
+{
+     transform: scale(1.2);
+}
+
+
+.footer{
+  background: #00A8E8;
+  height: 100px;
+}
+
+.footer-logo{
+  letter-spacing: -0.12em;
+}
+
+.programmes-image{
+  height: 400px;
+}
+
+// MEDIA STARTS HERE
+
+
+@media (min-width:320px)  {
+  // phone
+  .home-card{
+    height: 400px;
+    width: 400px;
+    margin-top: 20px;
+  }
+
+  .card-inner{
+    width: 350px;
+    height: 350px;
+  }
+
+  .logo-home{
+    height: 100px;
+  }
+  h1{
+    font-size: 60px;
+  }
+
+  #bluestairs{
+    background-image:
+      linear-gradient(
+        rgba(0, 0, 0, 0.41),
+        rgba(0, 0, 0, 0.41)
+      ),
+    url('bluestairs-mobile.jpg');
+  }
+
+  #dosomething{
+    background-image:
+      linear-gradient(
+        rgba(0, 0, 0, 0.41),
+        rgba(0, 0, 0, 0.41)
+      ),
+    url('oranges.jpg');
+  }
+
+  #lightbulb{
+    background-image:
+      linear-gradient(
+        rgba(0, 0, 0, 0.41),
+        rgba(0, 0, 0, 0.41)
+      ),
+    url('lightbulb-mobile.jpg');
+  }
+
+  .button{
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+
+  }
+
+  .nav-link{
+    font-size: 12px;
+  }
+}
+
+@media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ }
+@media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+
+
+@media (min-width:801px)  {
+  .home-card{
+    height: 600px;
+    width: 600px;
+  }
+
+  .card-inner{
+    width: 550px;
+    height: 550px;
+  }
+
+  .logo-home{
+    height: 200px;
+  }
+
+
+
+  h1{
+    font-size: 90px;
+  }
+
+  #bluestairs{
+    background-image:
+      linear-gradient(
+        rgba(0, 0, 0, 0.41),
+        rgba(0, 0, 0, 0.41)
+      ),
+    url('bluestairs.jpg');
+  }
+
+  #dosomething{
+    background-image:
+      linear-gradient(
+        rgba(0, 0, 0, 0.41),
+        rgba(0, 0, 0, 0.41)
+      ),
+    url('dosomethinggreat.jpg');
+  }
+
+  #lightbulb{
+    background-image:
+      linear-gradient(
+        rgba(0, 0, 0, 0.41),
+        rgba(0, 0, 0, 0.41)
+      ),
+    url('lightbulb.jpg');
+  }
+
+  .button{
+    width: 400px;
+    height: 60px;
+    font-size: 40px;
+  }
+
+  .nav-link{
+    font-size: 20px;
+  }
+
+}
+
+
+
+
+@media (min-width:1025px) {}
+@media (min-width:1281px) {}
+
+a{
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+  }
+}

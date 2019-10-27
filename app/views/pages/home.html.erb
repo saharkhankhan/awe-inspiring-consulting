@@ -1,2 +1,73 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="banner">
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active" id="bluestairs">
+        <div class="banner-heading">
+          <h1>Awareness</h1>
+        </div>
+      </div>
+      <div class="carousel-item" id="dosomething">
+        <div class="banner-heading">
+          <h1>Wellness</h1>
+        </div>
+      </div>
+      <div class="carousel-item" id="lightbulb">
+        <div class="banner-heading">
+          <h1>Engagement</h1>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <img src="<%= asset_path 'logo.png' %>" alt="" class='logo-home'>
+</div>
+
+<h3>Workplace Wellness - Corporate Health - Professional Lifestyle Awareness</h3>
+
+
+<div class="middle-banner">
+  <h1>Why Choose AWE?</h1>
+</div>
+
+<div class="home-paragraphs m-5 text-center">
+  <p>
+    Clients and professionals choose awe Inspiring Consulting because of our people. We have specific expertise and experience in performance management with a background in the latest thinking and best scientific evidence around wellness and elite team performance strategies. We are all passionate, dedicated and energetic. With our knowledge base and experience we bring authenticity to our message and relevance with our approach.
+  </p>
+  <%= link_to 'find out more', about_path, class: 'button button-blue' %>
+</div>
+
+<div class="home-programs pb-5">
+  <h1 class="mb-2">Programs</h1>
+  <div class="d-flex justify-content-around flex-wrap">
+    <%= link_to programmes_path do %>
+      <div class="home-card">
+        <div class="home-card-background" id="handup">
+          <div class="card-inner">
+            <h3>First Step</h3>
+          </div>
+        </div>
+      </div>
+    <% end %>
+    <%= link_to programmes_path do %>
+      <div class="home-card">
+        <div class="home-card-background" id="jigsaw">
+          <div class="card-inner">
+            <h3>Huddle</h3>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
