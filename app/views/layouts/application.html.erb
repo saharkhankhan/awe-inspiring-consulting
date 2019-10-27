@@ -33,9 +33,9 @@
   <body>
     <div class="nav">
       <ul>
-        <li>
-          <%= link_to 'Home', root_path, class: 'nav-link' %>
-        </li>
+<!--         <li>
+          <%#= link_to 'Home', root_path, class: 'nav-link' %>
+        </li> -->
         <li>
           <%= link_to 'About', about_path, class: 'nav-link' %>
         </li>
@@ -50,7 +50,9 @@
     <%= yield %>
     <div class="footer d-flex justify-content-around">
       <div class="">
-        <h1 class="footer-logo">awe</h1>
+        <%= link_to root_path do %>
+          <h1 class="footer-logo">awe</h1>
+        <% end %>
       </div>
     </div>
      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
